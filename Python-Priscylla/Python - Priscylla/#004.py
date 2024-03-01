@@ -1,0 +1,7 @@
+user = input("Digite algo: ")
+print('Tipo primitivo: ', type(user))
+print(f'É alfanumérico? {user.isalnum()}')
+print(f'É numérico? {user.isnumeric()}')
+print(f'É alfabético? {user.isalpha()}')
+print(f'É minúsculo? {user.islower()}')
+print(f'É maiúsculo? {user.isupper()}')
