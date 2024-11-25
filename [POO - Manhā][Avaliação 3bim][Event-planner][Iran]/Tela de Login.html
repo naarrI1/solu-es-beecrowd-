@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #495057;
+        }
+
+        .container {
+            width: 375px;
+            height: 812px;
+            background-color: #f8f9fa;
+            border-radius: 30px 30px 0 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+    flex: 20;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+        .header {
+            height: 32%;
+            background-color: #516B8A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+         }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .input-field label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .input-field input {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .termo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .termo input {
+            width: 15px;
+            height: 15px;
+            accent-color: #28a745;
+        }
+
+        .forgot-password {
+            font-size:  14px;
+            color: #007bff;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .submit-button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div class="header"></div>
+         <div class="content">
+        <div class="title">Tela de Login</div>
+        <form class="form">
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Senha</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="termo">
+                <input type="checkbox" id="termo">
+                <label for="termo">Termo de Privacidade</label>
+            </div>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            <button type="submit" class="submit-button">Entrar</button>
+        </form>
+        <div class="footer">© 2023 Sua Empresa</div>
+    </div>
+    </div>
+</body>
+</html>

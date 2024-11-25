@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Propostas de Fornecedores</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 375px;
+            height: 812px;
+            display: flex;
+            flex-direction: column;
+            background-color: #516B8A;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
+            margin-bottom: 16px;
+        }
+
+        .search-icon {
+            margin-right: 8px;
+        }
+
+        .settings-icon {
+            margin-left: 8px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 16px;
+            overflow-y: auto;
+        }
+
+        .card {
+            background-color: #444;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-info {
+            margin-left: 16px;
+        }
+
+        .card-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card-age {
+            font-size: 14px;
+            color: #aaa; }
+
+        footer {
+            padding: 16px;
+            text-align: center;
+            background-color: #444;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">Propostas de Fornecedores</div>
+            <div class="settings-icon">⚙️</div>
+        </header>
+        <div class="search-bar">
+            <div class="search-icon">🔍</div>
+            <input type="text" placeholder="Buscar..." style="flex: 1; border: none; background: transparent; color: #fff;">
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-name">Fornecedor 1</div>
+                    <div class="card-age">Idade: 5 anos</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-name">Fornecedor 2</div>
+                    <div class="card-age">Idade: 3 anos</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-name">Fornecedor 3</div>
+                    <div class="card-age">Idade: 2 anos</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-text">© 2023 Propostas de Fornecedores</div>
+        </footer>
+    </div>
+</body>
+</html>
