@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #495057;
+            background-color: #1a1a2e;
         }
 
         .container {
@@ -23,14 +23,14 @@
             flex-direction: column;
         }
         .content {
-    flex: 20;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-}
+            flex: 20;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+        }
 
-        .header {
+        .cabeca {
             height: 32%;
             background-color: #516B8A;
             display: flex;
@@ -40,7 +40,7 @@
             font-size: 24px;
          }
 
-        .title {
+        .titulo {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
@@ -53,18 +53,18 @@
             gap: 15px;
         }
 
-        .input-field {
+        .input {
             display: flex;
             flex-direction: column;
             gap: 5px;
         }
 
-        .input-field label {
+        .input label {
             font-size: 14px;
             font-weight: 500;
         }
 
-        .input-field input {
+        .input input {
             padding: 10px;
             border: 1px solid #ced4da;
             border-radius: 5px;
@@ -84,7 +84,7 @@
             accent-color: #28a745;
         }
 
-        .forgot-password {
+        .esqueceu-senha {
             font-size:  14px;
             color: #007bff;
             text-align: right;
@@ -107,7 +107,7 @@
             background-color: #218838;
         }
 
-        .footer {
+        .finaç {
             margin-top: auto;
             text-align: center;
             font-size: 14px;
@@ -117,15 +117,15 @@
 </head>
 <body>  
     <div class="container">
-        <div class="header"></div>
+        <div class="cabeca"></div>
          <div class="content">
-        <div class="title">Tela de Login</div>
+        <div class="titulo">Tela de Login</div>
         <form class="form">
-            <div class="input-field">
+            <div class="input">
                 <label for="email">Email</label>
                 <input type="email" id="email" required>
             </div>
-            <div class="input-field">
+            <div class="input">
                 <label for="password">Senha</label>
                 <input type="password" id="password" required>
             </div>
@@ -133,10 +133,10 @@
                 <input type="checkbox" id="termo">
                 <label for="termo">Termo de Privacidade</label>
             </div>
-            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
             <button type="submit" class="submit-button">Entrar</button>
         </form>
-        <div class="footer">© 2023 Sua Empresa</div>
+        <div class="final">© 2023 Sua Empresa</div>
     </div>
     </div>
 </body>

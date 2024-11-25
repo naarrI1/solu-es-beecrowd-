@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #1a1a2e;
   }
   
   .container {
@@ -32,7 +32,7 @@
     flex-direction: column;
   }
   
-  .header {
+  .cabeca {
     display: flex;
     align-items: center;
     padding: 16px;
@@ -59,17 +59,17 @@
     flex-direction: column;
   }
   
-  .field {
+  .campo {
     margin-bottom: 16px;
   }
   
-  .field-group {
+  .group {
     display: flex;
     justify-content: space-between;
   }
   
-  .field input,
-  .field textarea {
+  .campo input,
+  .campo textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -91,7 +91,7 @@
 </style>
 <body>
   <div class="container">
-    <div class="header">    
+    <div class="cabeca">    
       <div class="title">
         Tela de Criação de Evento
       </div>
@@ -99,22 +99,22 @@
 
     <div class="content">
       <div class="form">
-        <div class="field">
+        <div class="campo">
           <label for="event-title">Event title</label>
           <input type="text" id="event-title" placeholder="Lorem Ipsum is">
         </div>
-        <div class="field-group">
-          <div class="field">
+        <div class="group">
+          <div class="campo">
             <label for="event-date">Date</label>
             <input type="date" id="event-date" value="2023-09-05">
           </div>
-          <div class="field">
+          <div class="campo">
             <label for="event-time">Time</label>
             <input type="time" id="event-time" value="08:30">
           </div>
         </div>
-        <div class="field">
-          <label for="event-description">Description</label>
+        <div class="campo">
+          <label for="description">Description</label>
           <textarea id="event-description" placeholder="Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum is simply dummy text of the printing and typesetting industry."></textarea>
         </div>
         <button type="submit">Criar Evento</button>

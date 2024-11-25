@@ -22,8 +22,8 @@
             overflow: hidden;
         }
 
-        .header{
-            height: 32%;
+        .cabeca{
+            height: 15%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -31,36 +31,36 @@
             padding: 20px 25px;
         }
 
-        .header img{
+        .cabeca img{
             width: 25px;
             height: 25px;
         }
 
-        .header .user{
+        .cabeca .user{
             color: #fff;
             font-weight: bold;
         }
 
-        .header .menu{
+        .cabeca .menu{
             display: flex;
             flex-direction: column;
         }
 
-        .header .menu .line{
+        .cabeca .menu .line{
             width: 25px;
             height: 3px;
             background-color: #fff;
             margin-bottom: 5px;
         }
 
-        .search{
+        .barra-pesquisa{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 25px;
         }
 
-        .search input{
+        .barra-pesquisa input{
             background-color: #fff;
             border: none;
             padding: 10px;
@@ -68,12 +68,12 @@
             width: 80%;
         }
 
-        .search img{
+        .barra-pesquisa img{
             width: 20px;
             height: 20px;
         }
 
-        .categories{
+        .categorias{
             display: flex;
             justify-content: space-around;
             padding:  20px 0;
@@ -81,7 +81,7 @@
             border-bottom: 1px solid #444;
         }
 
-        .categories div{
+        .categorias div{
             color: #fff;
             text-align: center;
         }
@@ -96,50 +96,54 @@
         .content .item{
             background-color: #3C3C3C;
             border-radius: 10px;
-            padding: 15px;
+            padding: 50px;
             margin: 10px 0;
             color: #fff;
         }
 
-        .footer{
+        .final{
             display: flex;
+            color: #516B8A;
             justify-content: space-around;
             padding: 10px 0;
             border-top: 1px solid #444;
         }
 
-        .footer div{
-            color: #FFFFFF;
+        .final div{
+            color: hsl(0, 0%, 100%);
+            padding: 10px 0;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="user-icon.png" alt="User  Icon">
-            <div class="user">Username</div>
+        <div class="cabeca">
+            <img src="user-icon.png">
+            <div class="user"></div>
             <div class="menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
         </div>
-        <div class="search">
+        <div class="barra-pesquisa">
             <input type="text" placeholder="Search...">
             <img src="search-icon.png" alt="Search Icon">
         </div>
-        <div class="categories">
-            <div>Category 1</div>
-            <div>Category 2</div>
-            <div>Category 3</div>
+        <div class="categorias">
+            <div>Categoria 1</div>
+            <div>Categoria 2</div>
+            <div>Categoria 3</div>
         </div>
         <div class="content">
             <div class="item">Item 1</div>
             <div class="item">Item 2</div>
             <div class="item">Item 3</div>
         </div>
-        <div class="footer">
+        <div class="final">
+            <div>Home</div>
+            <div>Home</div>
             <div>Home</div>
             <div>Settings</div>
             <div>Profile</div>
