@@ -24,7 +24,6 @@ while True:
     except EOFError:
         break
 
-dicionario.update(['e', 'ex', 'mpl'])
 
 for palavra in sorted(dicionario)[:5000]:
     print(palavra)
